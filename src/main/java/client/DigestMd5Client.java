@@ -1,20 +1,20 @@
 package client;
 
-import Util.SaslMessage;
-import Util.ScenarioVariables;
+import util.SaslMessage;
+import util.ScenarioVariables;
 
 import javax.security.sasl.Sasl;
 import javax.security.sasl.SaslClient;
 import java.io.IOException;
 import java.net.Socket;
 
-import static Util.PrototypUtil.CALLBACK_HANDLER_CLIENT;
-import static Util.SaslConstants.DIGEST_MD5;
-import static Util.SaslConstants.PLAIN;
-import static Util.SaslMessage.STATUS.CONTINUE;
-import static Util.SaslMessage.STATUS.FAILURE;
-import static Util.SaslMessage.STATUS.SUCCESS;
-import static Util.SaslMessage.receive;
+import static util.PrototypUtil.CALLBACK_HANDLER_CLIENT;
+import static util.SaslConstants.DIGEST_MD5;
+import static util.SaslConstants.PLAIN;
+import static util.SaslMessage.STATUS.CONTINUE;
+import static util.SaslMessage.STATUS.FAILURE;
+import static util.SaslMessage.STATUS.SUCCESS;
+import static util.SaslMessage.receive;
 
 public class DigestMd5Client {
 

@@ -1,6 +1,6 @@
 package server;
 
-import Util.ScenarioVariables;
+import util.ScenarioVariables;
 
 import javax.security.sasl.Sasl;
 import javax.security.sasl.SaslServerFactory;

@@ -1,4 +1,4 @@
-package Util;
+package util;
 
 import javax.security.auth.callback.*;
 import javax.security.sasl.AuthorizeCallback;

@@ -1,6 +1,6 @@
 package server;
 
-import Util.SaslMessage;
+import util.SaslMessage;
 
 import javax.security.sasl.Sasl;
 import javax.security.sasl.SaslException;
@@ -8,11 +8,11 @@ import javax.security.sasl.SaslServer;
 import java.io.IOException;
 import java.net.Socket;
 
-import static Util.PrototypUtil.CALLBACK_HANDLER_SERVER;
-import static Util.SaslConstants.DIGEST_MD5;
-import static Util.SaslMessage.STATUS.CONTINUE;
-import static Util.SaslMessage.STATUS.FAILURE;
-import static Util.SaslMessage.STATUS.SUCCESS;
+import static util.PrototypUtil.CALLBACK_HANDLER_SERVER;
+import static util.SaslConstants.DIGEST_MD5;
+import static util.SaslMessage.STATUS.CONTINUE;
+import static util.SaslMessage.STATUS.FAILURE;
+import static util.SaslMessage.STATUS.SUCCESS;
 
 public class DigestMd5ConnectionHandler extends Thread{
 
